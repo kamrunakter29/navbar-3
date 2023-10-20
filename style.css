@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+ol,ul{
+    list-style: none;
+
+}
+nav{
+    text-align: center;
+    border:1px solid #AED6F1;
+}
+
+nav ul li a{
+    text-decoration: none;
+    display:block;
+    color:black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+nav ul li{
+    display: inline-block;
+    padding:10px 25px;
+    position: relative;
+}
+.submenu{
+    position: absolute;
+    width:300px;
+    text-align: left;
+    opacity:0;
+    visibility:hidden;
+    transition: 0.5s;
+    margin-left:30px;
+    border:none;
+    background-color:white;
+    margin-top:12px;
+    border-top:3px solid #1DBAEC;
+}
+.submenu li{
+    display:block;
+}
+
+.submenu li:hover a{
+    
+    color:#1DBAEC;
+    text-decoration-line:underline;
+}
+nav ul li:hover>.submenu{
+    opacity:1;
+    visibility: visible;
+
+}
+nav ul li:hover> a{
+    color:#1DBAEC;}
